@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>
+      Ryan Pettinato's Website
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+
+      .header {
+        margin-top: 40px;
+
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .name-header {
+        font-family: Noto Sans, Arial;
+        font-weight: 600;
+        font-size: 40px;
+      }
+
+      .profile-picture {
+        width: 200px;
+        border-radius: 100px;
+        border-style: solid;
+        border-color: rgb(184, 184, 184);
+        border-width: 4px;
+      }
+
+      /* New CSS section */
+      .opening-statements {
+        margin-top: 24px;
+
+        display: flex;
+
+        flex-direction: column;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+      }
+      .first-statement {
+        font-family: Noto Sans, Arial;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        
+        max-width: fit-content;  
+        width: 990px;
+      }
+      .hello {
+        font-family: Noto Sans, Arial;
+        font-weight: 800;
+        font-size: 24px;
+        color: rgb(255, 119, 0);
+        
+      }
+      .website-statement {
+        margin-top: 50px;
+        width: 700px;
+
+        font-family:  Noto Sans, Arial;
+        font-size: 18px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: fit-content;
+        align-items: center;
+      }
+      .professional-links {
+        margin-right: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-color: rgb(198, 198, 198);
+        
+      }
+      .website-code-link {
+        font-weight: 900;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border-width: 0.2px;
+      }
+      .website-code-link:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .github-link {
+        font-weight: 900;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      .github-link:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .personal-page-link {
+        font-weight: 900;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      .personal-page-link:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      /* New CSS section */
+      .front-page-panels {
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 45px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 46px;
+      }
+      .panels {
+        width: 100%;
+      }
+      .panel-picture {
+        border-style: solid;
+        border-width: 4px;
+        border-color: rgb(224, 224, 224);
+      }
+      .picture {
+        width: 100%;
+      }
+      .panel-description {
+        font-family: Noto Sans, Arial;
+        font-size: 18px;
+      }
+
+
+      /* New CSS section */
+      .website-link {
+        font-weight: 900;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      .website-link:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      @media (max-width: 1000px) {
+        .front-page-panels {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 1215px) {
+        .front-page-panels {
+          grid-template-columns: 1fr 1fr 1fr 
+        }
+      }
+
+    </style>
+
+  </head>
+
+
+  <body>
+    <!-- Start of new section -->
+    <div class="header">
+      <div>
+        <img class="profile-picture" src="images/LinkedInPic.jfif">
+      </div>
+      <div class="name-header">
+        Ryan Pettinato
+      </div>
+    </div>
+
+    <!-- Start of new section -->
+    <div class="opening-statements">
+      <div class="first-statement">
+        <span class="hello">Hello!</span> My name is Ryan Pettinato and this is my personal website. 
+        Here I will be posting various projects I have been working on as
+        well as things of personal interest.
+      </div>
+      <div class="website-statement">
+        <div class="professional-links">
+          Link to 
+          <a class="website-link" href="https://github.com/Tek073/ryanpettinato-com" target="_blank">
+            This Websites Code
+          </a>
+          and link to 
+          <a class="website-link" href="https://github.com/Tek073?tab=repositories" target="_blank">
+            My Github Page
+          </a>
+        </div>
+        <div class="personal-page">
+          Link to page of 
+          <a class="website-link" href="http://127.0.0.1:5500/ryanpettinato-com/personal.html">
+            Personal Interests
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start of new section -->
+    <div class="front-page-panels">
+      <div class="panels">
+        <div class="panel-picture">
+          <img class="picture" src="images/resume-snapshot.PNG">
+        </div>
+        <div class="panel-description">
+          My <strong>Resume</strong> and all information related to my education and experience is here
+        </div>
+      </div>
+      <div class="panels">
+        <div class="panel-picture">
+          <img class="picture" src="images/bricktiles.PNG">
+        </div>
+        <div class="panel-description">
+          I've been creating pixel art for some game ideas that I have had. 
+          So far my art is fairly simple but I hope to be able to draw fully
+          fleshed out faces in the future.
+        </div>
+      </div>
+      <div class="panels">
+        <div class="panel-picture">
+          <img class="picture" src="images/restaurant-app.PNG">
+        </div>
+        <div class="panel-description">
+          An old restaurant kiosk application I made a while back with a group.
+          Source code <a class="website-link" href="https://github.com/Tek073/CSE360" target="_blankb  ">Here</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start of new section -->
+
+  </body>
+
+</html>
