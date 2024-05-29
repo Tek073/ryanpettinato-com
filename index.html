@@ -1,176 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
     <title>
       Ryan Pettinato's Website
     </title>
+    <link rel="icon" type="image/x-icon" href="images/websiteIcon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/opening-statements.css">
+    <link rel="stylesheet" href="styles/front-page-panels.css">
+    <link rel="stylesheet" href="styles/general.css">
     
-    <style>
-
-      .header {
-        margin-top: 40px;
-
-        display: flex;
-        vertical-align: middle;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-
-      .name-header {
-        font-family: Noto Sans, Arial;
-        font-weight: 600;
-        font-size: 40px;
-      }
-
-      .profile-picture {
-        width: 200px;
-        border-radius: 100px;
-        border-style: solid;
-        border-color: rgb(184, 184, 184);
-        border-width: 4px;
-      }
-
-      /* New CSS section */
-      .opening-statements {
-        margin-top: 24px;
-
-        display: flex;
-
-        flex-direction: column;
-        vertical-align: middle;
-        align-items: center;
-        justify-content: center;
-      }
-      .first-statement {
-        font-family: Noto Sans, Arial;
-        font-weight: 400;
-        font-size: 24px;
-        text-align: center;
-        
-        max-width: fit-content;  
-        width: 990px;
-      }
-      .hello {
-        font-family: Noto Sans, Arial;
-        font-weight: 800;
-        font-size: 24px;
-        color: rgb(255, 119, 0);
-        
-      }
-      .website-statement {
-        margin-top: 50px;
-        width: 700px;
-
-        font-family:  Noto Sans, Arial;
-        font-size: 18px;
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        max-width: fit-content;
-        align-items: center;
-      }
-      .professional-links {
-        margin-right: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
-        border-left-style: solid;
-        border-right-style: solid;
-        border-color: rgb(198, 198, 198);
-        
-      }
-      .website-code-link {
-        font-weight: 900;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        border-width: 0.2px;
-      }
-      .website-code-link:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
-      .github-link {
-        font-weight: 900;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-      }
-      .github-link:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
-      .personal-page-link {
-        font-weight: 900;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-      }
-      .personal-page-link:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
-
-      /* New CSS section */
-      .front-page-panels {
-        margin-left: 70px;
-        margin-right: 70px;
-        margin-top: 45px;
-        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 46px;
-      }
-      .panels {
-        width: 100%;
-      }
-      .panel-picture {
-        border-style: solid;
-        border-width: 4px;
-        border-color: rgb(224, 224, 224);
-      }
-      .picture {
-        width: 100%;
-      }
-      .panel-description {
-        font-family: Noto Sans, Arial;
-        font-size: 18px;
-      }
-
-
-      /* New CSS section */
-      .website-link {
-        font-weight: 900;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-      }
-      .website-link:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
-
-      @media (max-width: 1000px) {
-        .front-page-panels {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      @media (min-width: 1215px) {
-        .front-page-panels {
-          grid-template-columns: 1fr 1fr 1fr 
-        }
-      }
-
-    </style>
-
   </head>
 
 
   <body>
+    <!--relative buttons-->
+    <!-- actuall link https://ryanpettinato.com/personal -->
+    <!-- link when editing http://127.0.0.1:5500/ryanpettinato-com/personal.html -->
+    <button class="personal-button" onclick="window.location.href='https://ryanpettinato.com/personal'">
+      Personal Page
+    </button>
+
     <!-- Start of new section -->
     <div class="header">
       <div>
@@ -201,7 +62,9 @@
         </div>
         <div class="personal-page">
           Link to page of 
-          <a class="website-link" href="http://127.0.0.1:5500/ryanpettinato-com/personal.html">
+          <!-- actuall link https://ryanpettinato.com/personal -->
+          <!-- link when editing http://127.0.0.1:5500/ryanpettinato-com/personal.html -->
+          <a class="website-link" href="https://ryanpettinato.com/personal">
             Personal Interests
           </a>
         </div>
@@ -215,7 +78,7 @@
           <img class="picture" src="images/resume-snapshot.PNG">
         </div>
         <div class="panel-description">
-          My <strong>Resume</strong> and all information related to my education and experience is here
+          My <a class="website-link" href="downloads/resume.pdf">Resume</a> and all information related to my education and experience is here
         </div>
       </div>
       <div class="panels">
@@ -223,7 +86,7 @@
           <img class="picture" src="images/bricktiles.PNG">
         </div>
         <div class="panel-description">
-          I've been creating pixel art for some game ideas that I have had. 
+          I've been creating pixel art for some game ideas that I have. 
           So far my art is fairly simple but I hope to be able to draw fully
           fleshed out faces in the future.
         </div>
@@ -236,11 +99,13 @@
           An old restaurant kiosk application I made a while back with a group.
           Source code <a class="website-link" href="https://github.com/Tek073/CSE360" target="_blankb  ">Here</a>
         </div>
-      </div>
+      </div>      
     </div>
-
+    
     <!-- Start of new section -->
-
   </body>
-
+  <script>
+    
+    // java script code
+  </script>
 </html>

@@ -4,8 +4,254 @@
     <title>
       Ryan Pettinato's Website
     </title>
+
+    <link rel="icon" type="image/x-icon" href="images/websiteIcon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+
+    <style>
+      .books-warning {
+        display: table;
+        margin: 0 auto;
+
+        margin-top: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        font-family: Cambria, Arial;
+        font-size: 32px;
+        font-weight: 700;
+        color: red;
+        text-align: center;
+        
+        
+      }
+      .books-panel {
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .book-opening {
+        font-family: Noto Sans, Arial;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      .year-marker {
+        margin-top: 18px;
+
+        font-family: Noto Sans, Arial;
+        font-size: 24px;
+        font-weight: 500;
+        font-style: italic;
+      }
+      .book {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 10px;
+        
+
+        margin-top: 10px;
+        padding-bottom: 10px;
+        border-bottom-style: solid;
+        border-color: rgba(24, 193, 174, 0.578);
+      }
+      .book-header {
+        display: grid;
+        grid-template-rows: 1fr;
+        row-gap: 10px;
+      }
+      .book-title {
+        font-family: Ysabeau Office, Arial;
+        font-size: 40px;
+        font-weight: 200;
+        line-height:  1;
+        font-style: italic;
+      }
+      .book-info {
+        
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        column-gap: 10px;
+
+        font-family: Noto Sans;
+        font-size: 16px;
+      }
+      .book-image {
+        width: 100px;
+        margin: 0px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(34, 33, 33)
+      }
+      .return-button {
+        width: 120px;
+        height: 65px;
+    
+        left: 70px;
+        top: 40px;
+        position: absolute;
+        z-index: 1;
+      }      
+      .book-description {
+        font-family: Noto Sans, Arial;
+        font-size: 24px;
+        
+        display: flex;
+        align-items: center;
+      }
+      body {
+        background-color: rgb(251, 230, 190);
+      }
+
+    </style>
   </head>
+
   <body>
-    <h1>yo</h1>
+    <!--start of new section-->
+    <!--test url: http://127.0.0.1:5500/ryanpettinato-com/index.html-->
+    <!--real url: https://ryanpettinato.com-->
+    <button class="return-button" onclick="window.location.href='https://ryanpettinato.com'">
+      Return
+    </button>
+    <div class="header">
+      <div class="name-header">
+        Ryan Pettinato
+      </div>
+    </div>
+    <span class="books-warning">BOOK SECTION CONTAINS SPOILERS!!!</span>
+    <!--start of new section-->
+    <div class="books-panel">
+      <div class="book-opening">
+        List of Books I have read from 2024 on...
+      </div>
+      <!--start of book list-->
+      <div class="year-marker">
+        2024
+      </div>
+      <div class="book">
+        <div class="book-header">
+          <div class="book-title">
+            The Poppy War
+          </div>
+          <div class="book-info">
+            <img class="book-image" src="images/poppywar.jpg">
+            <div>
+              <span>Author: R.F. Kuang <br>Pg Count: 544</span>
+            </div>
+          </div>
+        </div>
+        <div class="book-description">
+          Engaged in a century's old conflict with the neighboring kingdom, The people of Nikara
+          must train a new generation of tactical minds to aide in the coming wars. A young girl,
+          Rin, in her training discovers how far the people of the past and present are willing to 
+          go to save there country.
+        </div>
+      </div>
+      <div class="book">
+        <div class="book-header">
+          <div class="book-title">
+            The Dragon Republic
+          </div>
+          <div class="book-info">
+            <img class="book-image" src="images/dragonrepub.jpg">
+            <div>
+              <span>Author: R.F. Kuang <br>Pg Count: 672</span>
+            </div>
+          </div>
+        </div>
+        <div class="book-description">
+          Distraught from her destruction of a nation, Rin must rally her remaining companions of
+          the "Cike" to fight again. A civil war breaks out of clashing ideologies among the Nikara
+          continent. Rin, although weary of being used for her power before, must choose a side in 
+          order to push her beloved country into a better era.
+        </div>
+      </div>
+      <div class="book">
+        <div class="book-header">
+          <div class="book-title">
+            The Burning God
+          </div>
+          <div class="book-info">
+            <img class="book-image" src="images/burninggod.jpg">
+            <div>
+              <span>Author: R.F. Kuang <br>Pg Count: 640</span>
+            </div>
+          </div>
+        </div>
+        <div class="book-description">
+          Rage... This and revenge is all that drives our main character now. After betrayal at the 
+          hands of her romantic interest Nheza, Rin rallies the southern warlords in an effort to 
+          form a new empire. Rin has already buried thousands if not millions of bodies. How far is 
+          the southern girl from Tikany willing to go to form a more peaceful land. 
+        </div>
+      </div>
+      <div class="book">
+        <div class="book-header">
+          <div class="book-title">
+            Fourth Wing
+          </div>
+          <div class="book-info">
+            <img class="book-image" src="images/fourthwing.jpg">
+            <div>
+              <span>Author: Rebecca Yarros <br>Pg Count: 512</span>
+            </div>
+          </div>
+        </div>
+        <div class="book-description">
+          Thrust into the most deadly military college on the continent, Violet must survive her
+          first year in a training program that sees more than half of its students die each year.
+          The colleges goal is to produce deadly dragon-riders to defend the Navare Kingdom. As Violet 
+          struggles to survive, she uncovers a mystery far more deadly to not only herself but the rest 
+          of the world as well.
+        </div>
+      </div>
+      <div class="book">
+        <div class="book-header">
+          <div class="book-title">
+            Atomic Habits
+          </div>
+          <div class="book-info">
+            <img class="book-image" src="images/atomichabits.jpg">
+            <div>
+              <span>Author: James Clear <br>Pg Count: 320</span>
+            </div>
+          </div>
+        </div>
+        <div class="book-description">
+          This ranks among the top of my phycology/science books. James outlines what it truly means 
+          to have a habit and why improving these habits can catapult our lives into something great.
+          This book changed the way I see things just like "The Intelligent Investor"and "The Birth
+          Order Book" did before it. Bravo!
+        </div>
+      </div>
+      <div class="book">
+        <div class="book-header">
+          <div class="book-title">
+            Iron Flame
+          </div>
+          <div class="book-info">
+            <img class="book-image" src="images/ironflame.jpg">
+            <div>
+              <span>Author: Rebecca Yarros <br>Pg Count: 628</span>
+            </div>
+          </div>
+        </div>
+        <div class="book-description">
+          &#60;TO BE READ&#62;
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

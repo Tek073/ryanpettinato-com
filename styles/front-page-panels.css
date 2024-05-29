@@ -1,0 +1,28 @@
+/* New CSS section */
+.front-page-panels {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 45px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 46px;
+}
+.panels {
+  width: 100%;
+}
+.panel-picture {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  box-shadow: 1px 1px 4px #d5d5d5;
+}
+.picture {
+  width: 100%;
+}
+.panel-description {
+  font-family: Noto Sans, Arial;
+  font-size: 18px;
+}
+
