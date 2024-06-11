@@ -1,4 +1,5 @@
 /* New CSS section */
+/* BUTTONS AND LINKS */
 .website-link {
   font-weight: 900;
   text-decoration: none;
@@ -7,6 +8,16 @@
 .website-link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.personal-button {
+  width: 135px;
+  height: 85px;
+
+  right: 70px;
+  top: 40px;
+  position: absolute;
+  z-index: 1;
 }
 
 button {
@@ -34,13 +45,31 @@ button:active {
   background-color: white;
 }
 
-@media (max-width: 1000px) {
-  .front-page-panels {
-    grid-template-columns: 1fr 1fr;
-  }
+
+
+/* New CSS section */
+/* HEADER */
+.header {
+  margin-top: 40px;
+
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-@media (min-width: 1500px) {
-  .front-page-panels {
-    grid-template-columns: 1fr 1fr 1fr 1fr
-  }
+
+.name-header {
+  font-family: Noto Sans, Arial;
+  font-weight: 600;
+  font-size: 40px;
 }
+
+.profile-picture {
+  width: 200px;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: rgb(184, 184, 184);
+  border-width: 4px;
+}
+

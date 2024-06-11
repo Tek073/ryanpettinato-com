@@ -16,11 +16,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/opening-statements.css">
-    <link rel="stylesheet" href="styles/front-page-panels.css">
+    <link rel="stylesheet" href="styles/index-styles.css">
     <link rel="stylesheet" href="styles/general.css">
-    
+   
+
+    <style>
+      /* TEST STYLES */
+      
+      /*
+      .header {
+        
+        background-image: url(images/buildings_1.png);
+        
+        background-repeat: repeat;
+        font-family: Noto Sans, Arial;
+        animation: marquee 4s infinite linear;
+      }
+      @keyframes marquee {
+        0% {
+          background-position: 0;
+        }
+        100% {
+          background-position: -100px;
+        }
+      }
+      */
+    </style>
   </head>
 
 
@@ -28,7 +49,7 @@
     <!--relative buttons-->
     <!-- actuall link https://ryanpettinato.com/personal -->
     <!-- link when editing http://127.0.0.1:5500/ryanpettinato-com/personal.html -->
-    <button class="personal-button" onclick="window.location.href='https://ryanpettinato.com/personal'">
+    <button class="personal-button" onclick="window.location.href='http://127.0.0.1:5500/ryanpettinato-com/personal.html'">
       Personal Page
     </button>
 
@@ -51,11 +72,11 @@
       </div>
       <div class="website-statement">
         <div class="professional-links">
-          Link to 
+          Link to
           <a class="website-link" href="https://github.com/Tek073/ryanpettinato-com" target="_blank">
             This Websites Code
           </a>
-          and link to 
+          and link to
           <a class="website-link" href="https://github.com/Tek073?tab=repositories" target="_blank">
             My Github Page
           </a>
@@ -86,9 +107,8 @@
           <img class="picture" src="images/bricktiles.PNG">
         </div>
         <div class="panel-description">
-          I've been creating pixel art for some game ideas that I have. 
-          So far my art is fairly simple but I hope to be able to draw fully
-          fleshed out faces in the future.
+          Pixel art that I have been creating for a video game I have been creating.
+          I am using the "MonoGame" framework that codes in C#
         </div>
       </div>
       <div class="panels">
@@ -99,10 +119,23 @@
           An old restaurant kiosk application I made a while back with a group.
           Source code <a class="website-link" href="https://github.com/Tek073/CSE360" target="_blankb  ">Here</a>
         </div>
+      </div>    
+      <div class="panels">
+        <div class="panel-picture">
+          <img class="picture" src="images/primative-hitbox.PNG">
+        </div>
+        <div class="panel-description">
+          Doing a fair amount of backend coding with hitbox registery. Lots of unique ways to store and 
+          access data to make things like collision more efficient and reliable.
+        </div>
       </div>      
     </div>
     
     <!-- Start of new section -->
+    <div class="scrolling-city">
+      <marquee class="city-marquee" behavior="scrolling" direction="right" scrollamount="4"> <img src="images/buildings_1.png"></marquee>
+    </div>
+
   </body>
   <script>
     

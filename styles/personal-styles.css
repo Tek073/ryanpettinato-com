@@ -1,0 +1,98 @@
+
+/* New CSS section */
+/* INDEX PAGE OPENING STATEMENTS */
+
+.books-warning {
+  display: table;
+  margin: 0 auto;
+
+  margin-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-family: Cambria, Arial;
+  font-size: 32px;
+  font-weight: 700;
+  color: red;
+  text-align: center;
+  
+  
+}
+.books-panel {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.book-opening {
+  font-family: Noto Sans, Arial;
+  font-size: 24px;
+  font-weight: 500;
+}
+.year-marker {
+  margin-top: 18px;
+
+  font-family: Noto Sans, Arial;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+}
+.book {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 10px;
+  
+
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-color: rgba(24, 193, 173, 0.363);
+}
+.book-header {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+}
+.book-title {
+  font-family: Ysabeau Office, Arial;
+  font-size: 40px;
+  font-weight: 200;
+  line-height:  1;
+  font-style: italic;
+}
+.book-info {
+  
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: 10px;
+
+  font-family: Noto Sans;
+  font-size: 16px;
+}
+.book-image {
+  width: 100px;
+  margin: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(34, 33, 33)
+}
+.return-button {
+  width: 120px;
+  height: 65px;
+
+  left: 70px;
+  top: 40px;
+  position: absolute;
+  z-index: 1;
+}      
+.book-description {
+  font-family: Noto Sans, Arial;
+  font-size: 24px;
+  
+  display: flex;
+  align-items: center;
+}
+body {
+  background-color: rgb(251, 230, 190);
+}
