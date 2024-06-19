@@ -91,9 +91,36 @@ body {
 
 /* New CSS section */
 /* OTHER PANELS */
+.scroll-image {
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
 .city-marquee {
-  behavior: scroll;
-  direction: right;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.footnotes {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+  padding-top: 10px;
+
+  font-family: Noto Sans, Arial;
+  font-size: 12px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  border-top-style: solid;
+  border-width: 1.5px;
+  border-top-color: rgb(163, 163, 163);
 }
 
 /* SPECIALIZED LINKS */
