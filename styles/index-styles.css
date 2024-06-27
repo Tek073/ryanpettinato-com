@@ -2,6 +2,7 @@
 body {
   height: 100%;
   background-image: linear-gradient(to bottom, rgb(216, 232, 200), rgb(191, 226, 241));
+  font-family: Noto Sans, Arial;
 }
 
 /* New CSS section */
@@ -17,7 +18,6 @@ body {
   justify-content: center;
 }
 .first-statement {
-  font-family: Noto Sans, Arial;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
@@ -26,7 +26,6 @@ body {
   width: 990px;
 }
 .hello {
-  font-family: Noto Sans, Arial;
   font-weight: 800;
   font-size: 24px;
   color: rgb(255, 119, 0);
@@ -36,7 +35,6 @@ body {
   margin-top: 50px;
   width: 700px;
 
-  font-family:  Noto Sans, Arial;
   font-size: 18px;
   
   display: flex;
@@ -52,7 +50,7 @@ body {
   margin-left: 70px;
   margin-right: 70px;
   margin-top: 45px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   
   display: grid;
   
@@ -73,7 +71,6 @@ body {
   width: 100%;
 }
 .panel-description {
-  font-family: Noto Sans, Arial;
   font-size: 18px;
 }
 
@@ -87,6 +84,84 @@ body {
   .front-page-panels {
     grid-template-columns: 1fr 1fr 1fr 1fr
   }
+}
+
+/* New CSS section */
+/* Video Demos */
+
+.videos-title
+{
+  display: grid;
+  justify-content: center;
+
+  font-size: 40px;
+  font-family: Roboto Mono;
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+.video-panel
+{
+  display: grid;
+  width: 640px;
+  
+  margin: 0 auto
+  
+}
+.video-holder-div
+{
+
+  width: 640px;
+  height: 360px;
+  position: relative;
+}
+.video-right, .video-left 
+{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  bottom: 30px;
+
+  background-color: transparent;
+  border-color: transparent;
+}
+.video-right:hover, .video-left:hover
+{
+  cursor: pointer;
+  opacity: 80%;
+}
+.video-right:active, .video-left:active
+{
+  opacity: 50%;
+}
+
+.video-right
+{
+  right: 80px;
+}
+.video-left
+{
+  left: 80px;
+}
+.video-description
+{
+  font-size: 24px;
+  text-align: justify;
+
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: -100px;
+  margin-right: -100px;
+  
+}
+.video-description-disclaimer
+{
+  font-weight: bold;
+}
+.arrow-image 
+{
+  width: 100%;
 }
 
 /* New CSS section */
