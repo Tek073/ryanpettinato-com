@@ -51,15 +51,24 @@ body {
   margin-right: 70px;
   margin-top: 45px;
   margin-bottom: 30px;
+
+  margin-left: auto;
+  margin-right: auto;
   
+  width: 1080px;
   display: grid;
   
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
   row-gap: 20px;
+  column-gap: 20px;
+  justify-items: center;
 }
 .panels {
   width: 100%;
+  max-width: 540px;
+  justify-content: center;
+  margin-bottom: 16px;
+
 }
 .panel-picture {
   width: 100%;
@@ -72,19 +81,10 @@ body {
 }
 .panel-description {
   font-size: 18px;
+  text-align: justify;
 }
 
 
-@media (max-width: 1000px) {
-  .front-page-panels {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 1500px) {
-  .front-page-panels {
-    grid-template-columns: 1fr 1fr 1fr 1fr
-  }
-}
 
 /* New CSS section */
 /* Video Demos */
